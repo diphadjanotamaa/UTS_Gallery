@@ -1,0 +1,201 @@
+/* bagian pertama */
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: helvetica;
+	box-sizing: border-box;
+}
+
+/* navbar */
+
+.navbar{
+	width: 100%;
+	padding: 30px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	background-image: url(navbarbg.png);
+	background-size: cover; /* Membuat gambar memenuhi elemen */
+    background-position: center; /* Memposisikan gambar di tengah */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+	justify-content: space-between;
+	font-weight: bold;
+	background-color: lightgrey;
+}
+
+.logo{
+	width: 160px;
+	margin-top: -10px;
+	cursor: pointer;
+}
+
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 20px;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #d93923;
+	font-weight: bold;
+	padding: 15px;
+	border-radius: 100px;
+}
+
+li a:hover{
+	background: white;
+	transition: 0.5s;
+}
+
+.navbar a:hover{
+	color: #d93923;
+}
+
+/* swiper*/
+.swiper-container {
+    width: 800px;
+    height: 450px;
+    margin: 50px auto;
+    border: 5px solid #333; /* Border for the slider */
+    border-radius: 10px;    /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  }
+  
+  .swiper-slide img {
+    width: 100%; /* Image fills the slide */
+    height: 100%;
+    object-fit: cover; /* Ensures images fill without distortion */
+    border-radius: 10px; /* Rounded corners for images */
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #fff; /* White arrows */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #fff; /* White dots for pagination */
+  }
+
+  /* Umum untuk bagian galeri */
+.gallery-section {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+/* Judul Utama */
+.gallery-section h1 {
+    font-size: 2.5rem;
+    color: #2d2d6d; /* Warna biru elegan */
+    margin-bottom: 20px;
+}
+
+/* Deskripsi Umum */
+.gallery-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Bagian Fitur */
+.gallery-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.feature {
+    flex: 1 1 calc(50% - 20px); /* Dua kolom di layar besar */
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover efek untuk fitur */
+.feature:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Judul Fitur */
+.feature h2 {
+    font-size: 1.5rem;
+    color: #3c3c82;
+    margin-bottom: 10px;
+}
+
+/* Deskripsi Fitur */
+.feature p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Penutup */
+.gallery-section p:last-of-type {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #444;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .gallery-features {
+        flex-direction: column;
+    }
+
+    .feature {
+        flex: 1 1 100%; /* Satu kolom di layar kecil */
+    }
+
+    .gallery-section h1 {
+        font-size: 2rem;
+    }
+
+    .gallery-section p {
+        font-size: 0.95rem;
+    }
+}
+
+
+.shadow-rounded {
+    width: calc(100% - 40px); /* Lebar penuh, dikurangi margin */
+    max-width: 1200px; /* Opsional: batas maksimal lebar */
+    height: auto; /* Tinggi akan menyesuaikan konten */
+    margin: 20px auto; /* Pusatkan elemen */
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px; /* Sudut sedikit melengkung */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    background: #f9f9f9; /* Warna latar belakang */
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: left; /* Opsional: teks rata kiri */
+}
+
+
+
+
+
